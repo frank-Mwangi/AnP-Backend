@@ -12,9 +12,9 @@ import {
 const employeeRouter = Router();
 
 employeeRouter.get("/employees", getEmployees);
+employeeRouter.get("/employee/:id", getEmployeesById);
 employeeRouter.post("/employee", registerEmployee);
 employeeRouter.post("/employees/auth/login", loginEmployee);
-employeeRouter.get("/employee/:id", getEmployeesById);
 employeeRouter.put("/employees/:id", updateEmployee);
 employeeRouter.delete("/employees/:id", deleteEmployee);
 // userRouter.post("/user/register", registerUser);
