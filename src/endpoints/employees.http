@@ -1,0 +1,54 @@
+### Get Employees
+GET http://localhost:5400/api/employees
+
+### Register Employee 
+POST http://localhost:5400/api/employee
+Content-Type: application/json
+
+{
+    "FirstName": "Beyonce",
+    "LastName": "Knowles", 
+    "Address": "12BeverlyHills",
+    "DOB": "1981-04-03",
+    "Contact": "797312456",
+    "Gender": "Female",
+    "Position": "Senior Software Engineer",
+    "Schedule": "Night Shift",
+    "PhotoURL": "https://media1.popsugar-assets.com/files/thumbor/-yHEeO5rjmY5ERJHQXegW-ZZG08/9x192:2244x2427/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/02/11/900/n/1922398/112085525e431065dba032.37867622_/i/Beyonc%C3%A9-Knowles.jpg",
+    "Email": "polijo5454@irnini.com",
+    "Password": "#Beyonce00"
+}
+
+### Login an Employee
+POST http://localhost:5400/api/employees/auth/login
+Content-Type: application/json
+
+{
+    "Email": "polijo5454@irnini.com",
+    "Password": "#Beyonce00"
+}
+
+### Get Employee By ID
+GET http://localhost:5400/api/employee/4
+
+### Update Employee
+PUT http://localhost:5400/api/employees/4
+Content-Type: application/json
+
+{
+    "FirstName": "Beyonce",
+    "LastName": "Carter", 
+    "Address": "12BeverlyHills",
+    "DOB": "1981-04-03",
+    "Contact": "797312456",
+    "Gender": "Female",
+    "Position": "Senior Software Engineer",
+    "Schedule": "Night Shift",
+    "PhotoURL": "https://media1.popsugar-assets.com/files/thumbor/-yHEeO5rjmY5ERJHQXegW-ZZG08/9x192:2244x2427/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2020/02/11/900/n/1922398/112085525e431065dba032.37867622_/i/Beyonc%C3%A9-Knowles.jpg",
+    
+    "Password": "#Beyonce00"
+}
+
+
+### Delete an Employee
+DELETE http://localhost:5400/api/employees/3
